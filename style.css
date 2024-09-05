@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+}
+html{
+ height: 100%;   
+}
+body {
+    background-image: url(bg.jpeg);
+    background-size: cover;
+    font-family: "Berkshire Swash", serif;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+img {
+    width: 100px;
+}
+
+h1 {
+    font-size: 80px;
+    padding: 0 10px;
+    font-weight: normal;
+    background: rgb(9, 9, 121);
+    background: linear-gradient(124deg, rgba(9, 9, 121, 1) 10%, rgba(0, 212, 255, 1) 91%);
+    display: inline-block;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+h5 {
+    background-color: white;
+    display: inline-block;
+    border-radius: 7px;
+    color: #333;
+    padding: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.393);
+    font-weight: normal;
+    font-size: 24px;
+}
+
+#map {
+    width: 100%;
+
+}
+
+#game {
+    width: 90%;
+    max-width: calc(100vh - 130px);
+    margin: auto;
+    margin-top: 20px;
+    /* нужно для того, чтобы пират выравнивался по родителю, а не по экрану */
+    position: relative;
+
+}
+
+#pirate {
+    width: 50px;
+    position: absolute;
+    top: 70px;
+    left: 95px;
+    transition: 2s;
+    transform: translate(-50%, -100%);
+    /* для того чтобы пират не чувствовал мышку */
+    pointer-events: none;
+}
+
+.chance,
+#stats,
+#ng {
+    /* display: block; */
+    margin: auto;
+    margin-top: 20px;
+    padding: 0 15px;
+    height: 40px;
+    border-radius: 10px;
+
+}
+
+.chanceDisabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#tr {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* transform: translate(-50%,-50%); */
+    transform: scale(0) rotate(1080deg);
+    width: 300px;
+}
